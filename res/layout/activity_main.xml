@@ -4,9 +4,34 @@
     android:layout_height="match_parent"
     tools:context="${relativePackage}.${activityClass}" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ICMP Echo"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/bStartICMPEcho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_marginEnd="20dp" />
+
+        <Button
+            android:id="@+id/bStopICMPEcho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop" 
+            android:layout_marginEnd="20dp"/>
+    </LinearLayout>
 
 </RelativeLayout>
